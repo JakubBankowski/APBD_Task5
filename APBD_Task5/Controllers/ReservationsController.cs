@@ -45,7 +45,7 @@ public class ReservationsController : ControllerBase
     }
 
     [HttpPost]
-    public ActionResult<Reservation> CreateReservation(Reservation reservation)
+    public ActionResult<Reservation> CreateReservation([FromBody]Reservation reservation)
     {
         var roomExists = DataStore.Rooms.Any(r => r.Id == reservation.Id);
         if (!roomExists) return BadRequest($"Room with id {reservation.RoomId} does not exist.");
