@@ -10,7 +10,7 @@ public static class DataStore
         new Room { Id = 4, Name = "Conference Room 1", BuildingCode = "B", Floor = 1, Capacity = 15, HasProjector = true,  IsActive = false },
         new Room { Id = 5, Name = "Workshop Room 110", BuildingCode = "C", Floor = 1, Capacity = 40, HasProjector = true,  IsActive = true }
     };
-    /*
+    
     public static List<Reservation> Reservations { get; } = new()
     {
         new Reservation { Id = 1, RoomId = 1, OrganizerName = "Jan Nowak",      Topic = "Algorithms Lecture",      Date = new DateOnly(2026, 5, 10), StartTime = new TimeOnly(8, 0),  EndTime = new TimeOnly(10, 0), Status = "confirmed" },
@@ -22,5 +22,5 @@ public static class DataStore
     
     public static int NextRoomId => Rooms.Count > 0 ? Rooms.Max(r => r.Id) + 1 : 1;
     public static int NextReservationId => Reservations.Count > 0 ? Reservations.Max(r => r.Id) + 1 : 1;
-    */
+    
 }
